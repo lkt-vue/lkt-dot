@@ -1,0 +1,15 @@
+.lkt-dot {
+    --lkt-dot--background: red;
+    --lkt-dot--border-radius: 100%;
+    --lkt-dot--color: #ffffff;
+    --lkt-dot--display: block;
+    --lkt-dot--font-size: 12px;
+    --lkt-dot--font-style: normal;
+    --lkt-dot--height: 16px;
+    --lkt-dot--line-height: var(--lkt-dot--height);
+    --lkt-dot--position: absolute;
+    --lkt-dot--right: -5px;
+    --lkt-dot--top: -5px;
+    --lkt-dot--text-align: center;
+    --lkt-dot--width: 16px;
+}

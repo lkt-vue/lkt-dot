@@ -1,0 +1,15 @@
+.lkt-dot {
+    background: var(--lkt-dot--background);
+    color: var(--lkt-dot--color);
+    font-size: var(--lkt-dot--font-size);
+    height: var(--lkt-dot--height);
+    right: var(--lkt-dot--right);
+    top: var(--lkt-dot--top);
+    width: var(--lkt-dot--width);
+    line-height: var(--lkt-dot--line-height);
+    text-align: var(--lkt-dot--text-align);
+    position: var(--lkt-dot--position, absolute);
+    display: var(--lkt-dot--display, block);
+    border-radius: var(--lkt-dot--border-radius, 100%);
+    font-style: var(--lkt-dot--font-style, normal);
+}
