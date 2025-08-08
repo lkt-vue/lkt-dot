@@ -8,12 +8,13 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
   }, getDefaultValues(Dot)),
   setup(__props) {
     const props = __props;
-    const computedClassName = computed(() => {
+    const computedText = computed(() => {
+      return extractI18nValue(props.text);
+    }), computedClassName = computed(() => {
       let r = [];
+      if (String(computedText.value).length > 0) r.push("is-filled");
       if (props.class) r.push(props.class);
       return r.join(" ");
-    }), computedText = computed(() => {
-      return extractI18nValue(props.text);
     });
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("i", {

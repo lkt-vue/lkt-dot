@@ -4,13 +4,14 @@ import {Dot, DotConfig, extractI18nValue, getDefaultValues} from "lkt-vue-kernel
 
 const props = withDefaults(defineProps<DotConfig>(), getDefaultValues(Dot));
 
-const computedClassName = computed(() => {
+const computedText = computed(() => {
+        return extractI18nValue(props.text);
+    }),
+    computedClassName = computed(() => {
         let r = [];
+        if (String(computedText.value).length > 0) r.push('is-filled');
         if (props.class) r.push(props.class);
         return r.join(' ');
-    }),
-    computedText = computed(() => {
-        return extractI18nValue(props.text);
     });
 
 </script>

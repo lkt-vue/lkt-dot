@@ -8,7 +8,7 @@
     width: var(--lkt-dot--width);
     line-height: var(--lkt-dot--line-height);
     text-align: var(--lkt-dot--text-align);
-    position: var(--lkt-dot--position, absolute);
+    position: var(--lkt-dot--position, static);
     display: var(--lkt-dot--display, block);
     border-radius: var(--lkt-dot--border-radius, 100%);
     font-style: var(--lkt-dot--font-style, normal);
